@@ -1,11 +1,21 @@
 * {
+    
     text-align: center;
 }
 div {
     width: 300px;
 
 }
+.square {
 
+  text-align: center;
+  font-size:80px;
+  
+
+}
+#ttt {
+    display: none;
+}
 div div {
     width: 100px;
     height: 100px;

@@ -3,8 +3,12 @@
 
 <body>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <div classname="title">Tic Tac Toe</div>
-    <div classname="scripts" id="ttt">
+    <div class="title">Tic Tac Toe</div>
+    <div><button onclick="init()">Start Game</button><button onclick="clearing()">Clear
+            Board!</button>
+    </div>
+    <div id="start">Game has not yet started</div>
+    <div class="scripts" id="ttt">
         <div class="square"></div>
         <div class="square"></div>
         <div class="square"></div>
@@ -16,7 +20,7 @@
         <div class="square"></div>
     </div>
     </div>
-
+    <div id="texts"> </div>
     <script src="app.js"></script>
 </body>
 
