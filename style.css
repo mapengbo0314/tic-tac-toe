@@ -18,9 +18,10 @@ div {
   font-size: 160px;
 }
 .pic {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   object-fit: cover;
+  margin: left;
 }
 .title {
   font-size: 100px;
