@@ -2,7 +2,7 @@
   text-align: center;
   margin: auto;
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 body {
   background-color: antiquewhite;
@@ -23,7 +23,8 @@ div {
   object-fit: cover;
 }
 .title {
-  font-size: 80px;
+  font-size: 100px;
+  font-weight: bolder;
 }
 .class {
   align-content: center;
