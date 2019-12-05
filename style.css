@@ -1,24 +1,39 @@
 * {
-    
-    text-align: center;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+body {
+  background-color: antiquewhite;
+}
+a {
+  font-size: 30px;
 }
 div {
-    width: 300px;
-
+  width: 600px;
 }
 .square {
-
   text-align: center;
-  font-size:80px;
-  
-
+  font-size: 160px;
+}
+.pic {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.title {
+  font-size: 80px;
+}
+.class {
+  align-content: center;
 }
 #ttt {
-    display: none;
+  display: none;
 }
 div div {
-    width: 100px;
-    height: 100px;
-    outline: 1px solid;
-    float: left;
+  width: 200px;
+  height: 200px;
+  outline: 2px solid;
+  float: left;
 }
