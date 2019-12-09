@@ -97,6 +97,7 @@ const gameBoard = player => {
         }
         //------Keeps happening after trying to clear it bug, on Concludes + Selected
         if (winType().winner === true || moves >= 9) {
+            console.log("This game ended")
             return ("The Game has already concluded!"); //wtf, that was the only fix? by having a return function?
         } else {
             if (game[index] != "") {
@@ -121,6 +122,11 @@ const gameBoard = player => {
         game.map((val, index) => {
             divsqu[index].innerHTML = val;
         });
+        if (winType().winner === true) {
+            game.map((val, index) => {
+                divsqu[index].innerHTML = "<img src = 'victory1.gif'></img>";
+            })
+        }
     };
 
     return { game, go, moves, rendering };
@@ -136,6 +142,9 @@ function eventClicker(games) {
     }
 }
 function init() {
+    if (document.getElementById("ttt").style.display === "block") {
+        return (alert("the game has already begun!"));
+    }
     document.getElementById("start").innerHTML = "Game has begun";
     document.getElementById("ttt").style.display = "block";
     document.getElementById("texts").innerHTML = "It's X's Turn";
